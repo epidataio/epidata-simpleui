@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+    <title>EpiData Simple Dashboard</title>
+    {{ js_resources|indent(4)|safe }}
+    {{ css_resources|indent(4)|safe }}
+    {{ plot_script|indent(4)|safe }}
+  </head>
+
+<body>
+  <h1>EpiData - Simple Dashboard</h1>
+
+  {{plot_div.original|indent(4)|safe}}
+  <br><br>
+  {{plot_div.processed|indent(4)|safe}}
+</body>
+</html>
